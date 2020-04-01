@@ -1,0 +1,3 @@
+{
+  "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=velidacosmostable;AccountKey=jtFtqFnBnE2hW9ifJV6lF7WYrFOX3o2kPfWm9hPZaqmfbaNGXTGzxTYXrCIc5QFYbXfVqOM3zX2Vgxo8u1xTWQ==;TableEndpoint=https://velidacosmostable.table.cosmos.azure.com:443/;"
+}

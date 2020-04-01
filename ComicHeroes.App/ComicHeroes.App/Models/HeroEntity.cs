@@ -22,6 +22,5 @@ namespace ComicHeroes.App.Models
         public int YearFirstAppeared { get; set; }
         public string Hometown { get; set; }
         public string TeamAffiliation { get; set; }
-        public List<string> Powers { get; set; }
     }
 }
