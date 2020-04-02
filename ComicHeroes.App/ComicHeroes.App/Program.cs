@@ -30,11 +30,17 @@ namespace ComicHeroes.App
                     await OperationsHelper.InsertOrMergeHero(cloudTable, hero);
                 }
 
-                Console.WriteLine("Let's see if we can find Captain America! Performing a read");
+                Console.WriteLine("Let's see if we can find Superman! Performing a read.");
 
-                await OperationsHelper.GetHero(cloudTable, "Captain America", "Steve Rodgers");
+                var superman = await OperationsHelper.GetHero(cloudTable, "Superman", "Clark Kent");
 
-                Console.WriteLine("Let's 'snap' Tony Stark out of the Universe (too soon?)");
+                Console.WriteLine("Wait, his hometown isn't right! Let's update it.");
+
+                superman.Hometown = "Kryptonopolis";
+
+                await OperationsHelper.InsertOrMergeHero(cloudTable, superman);
+
+                Console.WriteLine("Let's 'snap' Tony Stark out of the Universe (too soon?).");
 
                 HeroEntity tonyStark = await OperationsHelper.GetHero(cloudTable, "Iron Man", "Tony Stark");
 
